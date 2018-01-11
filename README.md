@@ -14,8 +14,8 @@ Summary: A simulation environment for experiments at the XPD beamline at NSLS-II
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xpdsim-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xpdsim-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/xpdsim-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xpdsim-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/xpdSim-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/xpdSim-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/xpdSim-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/xpdSim-feedstock)
 Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
 
 Current release info
