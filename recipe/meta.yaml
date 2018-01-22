@@ -1,6 +1,6 @@
 {% set name = "xpdsim" %}
-{% set version = "0.1.4" %}
-{% set sha256 = "c35b7b67f6ff5f65a132222d2a8fa6d35eaa2283106d8bd09297db59ddb81758" %}
+{% set version = "0.1.5" %}
+{% set sha256 = "a8137428d3b24af7d43e3b7d9dc476bdc47e6f15d58c5cb2266f9ac9ea514efc" %}
 
 package:
   name: {{ name|lower }}
