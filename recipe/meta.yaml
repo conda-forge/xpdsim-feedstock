@@ -1,6 +1,6 @@
 {% set name = "xpdsim" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "36fd7b141d56a0b76f6777e485fd692b3737ee2326080701f4299ed9c312fe68" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "fdb23a1cea9a03273d01f9eeaaaae6661a4983ef20613a7db3236dc8b4c71508" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [py2k]
 
