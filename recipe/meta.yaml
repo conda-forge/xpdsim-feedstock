@@ -13,8 +13,8 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [py2k]
 
 requirements:
   build:
@@ -44,4 +44,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - CJ-Wright
+    - Simon Billinge
+    - Songsheng Tao
