@@ -1,5 +1,5 @@
 {% set name = "xpdsim" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/xpdAcq/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: b92e1d5be8cb97d2ae5d6f9c5fa83f406b8fc2b2bd8d3387e1fe79843fb89195
+  sha256: a22454ba1b9c1f66ee9a21d42fe29ee48cfd389a3e0a28c02f12e034a07299cb
 
 build:
   number: 0
@@ -22,9 +22,10 @@ requirements:
   run:
     - python >=3.8
     - bluesky
-    - databroker <2.0.0a
+    - databroker
     - ophyd
     - pyfai
+    - suitcase-mongo
 
 test:
   imports:
