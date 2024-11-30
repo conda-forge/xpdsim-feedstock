@@ -11,16 +11,16 @@ source:
   sha256: a22454ba1b9c1f66ee9a21d42fe29ee48cfd389a3e0a28c02f12e034a07299cb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
-  build:
-    - python >=3.8
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - bluesky
     - databroker
     - ophyd
@@ -28,6 +28,8 @@ requirements:
     - suitcase-mongo
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - xpdsim
     - xpdsim.movers
